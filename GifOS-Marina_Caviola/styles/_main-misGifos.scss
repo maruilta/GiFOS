@@ -1,0 +1,96 @@
+main{
+    .misGifos{
+        display: none;
+        .misGifos-section{
+            padding-top: 120px;
+            padding-bottom: 50px;
+            .misGifos-container{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                img{
+                    width: 24px;
+                    height: 22px;
+                }
+                h2{
+                    color: $blue;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .misGifos_render{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            .misGifos_render_container{
+                display: flex;
+                flex-flow: row wrap;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                justify-content: center;
+                .item-gifos{
+                    position: relative;
+                    img{
+                        width: 156px;
+                        height: 120px;
+                        display: block;
+                    }
+                    .overlay-gifos{
+                        display: none;
+                        position: absolute;
+                        flex-flow: column;
+                        justify-content: space-between;
+                        background: $blue;
+                        opacity: 0;
+                        width: 100%;
+                        font-size: 20px;
+                        bottom: 0;
+                        color: $white;
+                        height: 100%;
+                        .icon-overlay-gifos{
+                            display: flex;
+                            justify-content: flex-end;
+                            img{
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 6px;
+                                background:  $white;
+                                opacity: 0.7;
+                                margin: 5px;
+                                cursor: pointer;
+                            }
+                        }
+                        .text-overlay{
+                            margin: 0 0 5px 10px;
+                        }
+                    }
+                }
+            } 
+        }
+        .description-empty-misGifos-section{
+            height: 500px;
+            .description-empty-misGifos-container{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                img{
+                    width: 150px;
+                    height: 151px;
+                }
+                h2{
+                    color: $light-green;
+                    font-size: 22px;
+                    line-height: 33px;
+                    width: 320px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

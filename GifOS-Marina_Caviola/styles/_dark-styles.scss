@@ -1,0 +1,235 @@
+.dark{
+    background: $dark-grey;
+    header{
+        background: transparent;
+        background-color: $dark-grey;
+        border-top: 5px solid $black;
+        .full-menu{
+            background: $dark-grey;
+    }
+    main{
+        .principal-section{
+            .principal-container{
+                h1{
+                    color: $white;
+                }
+                .principal-container-input{
+                    input{
+                        color: $white;
+                        background-color: $dark-grey;
+                        border: 1px solid $white;
+                    }
+                    a{
+                        img{
+                            filter: brightness(2000%);
+                        }
+                    }
+                }
+                .suggestion-container {
+                    background-color: $dark-grey;
+                    border: 1px solid $white;
+                    border-top: none;
+                    hr{
+                        color: $light-grey;
+                    }
+                    .suggestions{
+                        li{
+                            color: $light-grey;
+                            &:hover {
+                                background-color: rgba(65, 65, 65, 0.911);
+                                cursor: default;
+                            }
+                            img{
+                                color: $light-grey;
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+        .trending-section{
+            .trending-container{
+                h2, p, span{
+                    color: $white;
+                }
+            }
+        }
+        .result-search-section{
+            .result-search-title{
+                color: $white;
+            }
+            .btn{
+                border: 1px solid $white;
+                color: $black;
+                background: transparent;
+            }
+        }
+        .search-empty-section{
+            .search-empty{
+                h2{
+                    color: $white;
+                }
+            }
+        }
+        .favorite{
+            .favorite-section{
+                .favorite-container{
+                    h2{
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .misGifos{
+            .misGifos-section{
+                .misGifos-container{
+                    h2{
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .carousel{
+            background-color: $light-black;
+            h2, p{
+                color: $white;
+            }
+            .slick-list{
+                .slick-arrow{
+                    background-color:  $light-black;
+                    border: 1px solid $white;
+                }
+                .slick-prev{
+                    background-image: url(../assets/button-slider-left-md-noct.svg);
+                }
+                .slick-next{
+                    background-image: url(../assets/button-slider-right-md-noct.svg);
+                }
+            }
+        }
+        .createGifos{
+            .createGifos-container{
+                .container-top{
+                    .container-camera{
+                        .createGifos-img-camera{
+                            background-image: url(../assets/camara-modo-noc.svg);
+                        }
+                    }
+                    .container-createGifos-box{
+                        .createGifos-box{
+                            .createGifos-box-intern{
+                                h2, p{
+                                    color: $white;
+                                }
+                            }
+                        }
+                        .container-createGifos-bottom{
+                            div{
+                                border: 1px solid $white;
+                                a{
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    .container-movie{
+                        .createGifos-movie{
+                            background-image: url(../assets/pelicula-modo-noc.svg);
+                        }
+                    }
+                }
+                .container-bottom{
+                    .container-btn{
+                        .btn-create{
+                            border: 1px solid $white;
+                            color: $white;
+                            &:hover{
+                                background: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        border-bottom: 5px solid $black;
+        .social.media{
+            p{
+                color: $white;
+            }
+            .media-icons{
+                .facebook{
+                    background-image: url(../assets/icon_facebook_noc.svg);
+                }
+                .instagram{
+                    background-image: url(../assets/icon_instagram_noc.svg);
+                }
+                .twitter{
+
+                    background-image: url(/assets/icon_twitter_noc.svg);
+                }
+                &:hover{                   
+                    .facebook{
+                        background-image: url(../assets/icon_facebook_noc.svg);
+                    }
+                     .instagram{
+                        background-image: url(../assets/icon_instagram_noc.svg);
+                    }
+                    .twitter{
+                        background-image: url(../assets/icon-tw-normal.svg);
+                    } 
+                }
+            }
+        }
+        .copyright{
+            p{
+                color: $white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .dark{
+        header{
+            .full-menu{
+                background: transparent;
+                background-color: $dark-grey;
+                .add{
+                    &:hover{
+                        background: $white;
+                        background-image: url(../assets/CTA-crear-gifo-hover-modo-noc.svg);
+                    }
+                    &:active{
+                        background: $light-grey;
+                        background-image: url(../assets/CTA-crear-gifo-active-modo-noc.svg);
+                    }
+                }
+            }
+        }
+        main{
+            .result-search-section{
+                .btn:hover{
+                    background-color: $white;
+                    color: $black;
+                }
+            }
+            .carousel{
+                .slick-list{
+                    .slick-prev{
+                        &:hover{
+                            background: $white;
+                        }
+                    }
+                    .slick-next{
+                        &:hover{
+                            background: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

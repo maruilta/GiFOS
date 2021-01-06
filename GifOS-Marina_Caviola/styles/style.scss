@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'header';
+@import 'main';
+@import 'main-favoritos';
+@import 'main-misGifos';
+@import 'main-createGifos';
+@import 'footer';
+@import 'media';
+@import 'dark-styles';
+*{
+   font-family: $montserrat;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   .purple{
+       color: $violet;
+   }
+   .gray{
+       color: $light-grey;
+   }
+}
+.hide {
+	display: none !important;
+}
+.show {
+	display: block !important;
+}
+.blanco{
+	color: $white !important;
+}
+.morado{
+	background: $violet !important;
+}
